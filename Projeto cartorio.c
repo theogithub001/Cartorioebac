@@ -127,6 +127,7 @@ int main() //Definição de variáveis
 		printf("\t1 - Registrar nomes\n"); //Primeira opção
 		printf("\t2 - Consultar nomes\n"); //Segunda opção
 		printf("\t3 - Deletar nomes\n"); //Terceira opção e fim do menu
+		printf("\t4 - Sair do sistema\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -146,6 +147,11 @@ int main() //Definição de variáveis
 			
 			case 3: //caso 3
 		    deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");	
+			return 0;
 			break;
 			
 			default: //default=opções não mapeadas
